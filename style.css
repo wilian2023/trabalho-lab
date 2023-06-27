@@ -1,0 +1,137 @@
+/*style*/
+.container {
+
+    display: flex;
+    
+    justify-content: space-between;
+    
+    margin-top: 20px;
+    
+    }
+    
+    
+    .player,
+    
+    .computer {
+    
+    width: 45%;
+    
+    background-color: #f2f2f2;
+    
+    padding: 20px;
+    
+    border-radius: 5px;
+    
+    box-sizing: border-box;
+    
+    }
+    
+    
+    .player h2,
+    
+    .computer h2 {
+    
+    margin-top: 0;
+    
+    }
+    
+    
+    .hand {
+    
+    display: flex;
+    
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    
+    margin-bottom: 20px;
+    
+    }
+    
+    
+    .hand .card {
+    
+    width: 80px;
+    
+    height: 120px;
+    
+    background-color: #fff;
+    
+    border: 1px solid #ccc;
+    
+    border-radius: 5px;
+    
+    margin: 5px;
+    
+    display: flex;
+    
+    justify-content: center;
+    
+    align-items: center;
+    
+    cursor: pointer;
+    
+    }
+    
+    
+    .locations {
+    
+    display: flex;
+    
+    justify-content: space-between;
+    
+    }
+    
+    
+    .location {
+    
+    width: 30%;
+    
+    background-color: #fff;
+    
+    border: 1px solid #ccc;
+    
+    border-radius: 5px;
+    
+    padding: 10px;
+    
+    box-sizing: border-box;
+    
+    margin-bottom: 20px;
+    
+    }
+    
+    
+    .location h3 {
+    
+    margin-top: 0;
+    
+    }
+    
+    
+    #end-turn-button {
+    
+    display: block;
+    
+    margin-top: 20px;
+    
+    padding: 10px 20px;
+    
+    background-color: #4CAF50;
+    
+    color: #fff;
+    
+    border: none;
+    
+    border-radius: 5px;
+    
+    cursor: pointer;
+    
+    }
+    
+    
+    #end-turn-button:hover {
+    
+    background-color: #45a049;
+    
+    }
