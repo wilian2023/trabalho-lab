@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Estalo LastimÃ¡vel</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.container {
+
+display: flex;
+
+justify-content: space-between;
+
+margin-top: 20px;
+
+}
+
+.player,
+
+.computer {
+
+width: 45%;
+
+background-color: #f2f2f2;
+
+padding: 20px;
+
+border-radius: 5px;
+
+box-sizing: border-box;
+
+}
+
+.player h2,
+
+.computer h2 {
+
+margin-top: 0;
+
+}
+
+.hand {
+
+display: flex;
+
+flex-wrap: wrap;
+
+justify-content: center;
+
+margin-bottom: 20px;
+
+}
+
+.hand .card {
+
+width: 80px;
+
+height: 120px;
+
+background-color: #fff;
+
+border: 1px solid #ccc;
+
+border-radius: 5px;
+
+margin: 5px;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+cursor: pointer;
+
+}
+
+.locations {
+
+display: flex;
+
+justify-content: space-between;
+
+}
+
+.location {
+
+width: 30%;
+
+background-color: #fff;
+
+border: 1px solid #ccc;
+
+border-radius: 5px;
+
+padding: 10px;
+
+box-sizing: border-box;
+
+margin-bottom: 20px;
+
+}
+
+.location h3 {
+
+margin-top: 0;
+
+}
+
+#end-turn-button {
+
+display: block;
+
+margin-top: 20px;
+
+padding: 10px 20px;
+
+background-color: #4CAF50;
+
+color: #fff;
+
+border: none;
+
+border-radius: 5px;
+
+cursor: pointer;
+
+}
+
+#end-turn-button:hover {
+
+background-color: #45a049;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="player" data-energy="10">
+
+<h2>Jogador</h2>
+
+<div id="player-hand" class="hand"></div>
+
+<div id="player-locations" class="locations">
+
+<div id="location-1" class="location">
+
+<h3>Local 1</h3>
+
+</div>
+
+<div id="location-2" class="location">
+
+<h3>Local 2</h3>
+
+</div>
+
+<div id="location-3" class="location">
+
+<h3>Local 3</h3>
+
+</div>
+
+</div>
+
+<button id="end-turn-button">Finalizar Turno</button>
+
+</div>
+
+<div class="computer" data-energy="10">
+
+<h2>Computador</h2>
+
+<div id="computer-hand" class="hand"></div>
+
+<div id="computer-locations" class="locations">
+
+<div id="location-1" class="location">
+
+<h3>Local 1</h3>
+
+</div>
+
+<div id="location-2" class="location">
+
+<h3>Local 2</h3>
+
+</div>
+
+<div id="location-3" class="location">
+
+<h3>Local 3</h3>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="game-status">
+
+<h2>Status do Jogo</h2>
+
+<p id="current-round">Rodada: 1</p>
+
+<p id="player-controlled">Locais controlados pelo jogador: 0</p>
+
+<p id="computer-controlled">Locais controlados pelo computador: 0</p>
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+
+</html>
